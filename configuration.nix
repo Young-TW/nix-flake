@@ -88,7 +88,25 @@
     description = "young";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-    #  thunderbird
+      anki
+      anydesk
+      bitwarden
+      brave
+      cider
+      discord
+      element-desktop
+      kitty
+      lmms
+      megasync
+      mindustry
+      obs-studio
+      osu-lazer
+      steam
+      telegram-desktop
+      vscode
+      yuzu
+      rpcs3
+      pcsx2
     ];
   };
 
@@ -101,7 +119,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    vim
     wget
     fish
     fastfetch
@@ -112,6 +130,20 @@
     bat
     rustc
     cargo
+    git
+    github-cli
+    cmake
+    clang
+    yt-dlp
+    youtube-dl
+    neofetch
+    neovim
+    ranger
+    onefetch
+    cxxopts
+    fmt
+    ibus
+    jetbrains-mono
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
