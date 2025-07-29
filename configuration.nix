@@ -88,8 +88,6 @@
     description = "young";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      anki
-      anydesk
       bitwarden
       brave
       cider
@@ -97,14 +95,12 @@
       element-desktop
       kitty
       lmms
-      megasync
       mindustry
       obs-studio
       osu-lazer
       steam
       telegram-desktop
       vscode
-      yuzu
       rpcs3
       pcsx2
     ];
@@ -135,7 +131,6 @@
     cmake
     clang
     yt-dlp
-    youtube-dl
     neofetch
     neovim
     ranger
