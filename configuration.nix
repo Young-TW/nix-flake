@@ -139,6 +139,7 @@
     fmt
     ibus
     jetbrains-mono
+    eza
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
