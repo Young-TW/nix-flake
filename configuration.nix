@@ -8,11 +8,10 @@
   imports = [
     ./hardware-configuration.nix
 
-    # 加入 home-manager NixOS module
-    (builtins.fetchTarball {
-      url = "https://github.com/nix-community/home-manager/archive/release-25.05.tar.gz";
+    "${builtins.fetchTarball {
+      url = "https://github.com/NixOS/nixpkgs/archive/refs/tags/25.05.tar.gz";
       sha256 = "0000000000000000000000000000000000000000000000000000";
-    }) + "/nixos"
+    }}/nixos"
   ];
 
   home-manager = {
