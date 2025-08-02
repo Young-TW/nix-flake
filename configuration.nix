@@ -90,19 +90,15 @@
     packages = with pkgs; [
       bitwarden
       brave
-      cider
       discord
       element-desktop
       kitty
-      lmms
       mindustry
       obs-studio
       osu-lazer
       steam
       telegram-desktop
       vscode
-      rpcs3
-      pcsx2
     ];
   };
 
