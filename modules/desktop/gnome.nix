@@ -10,4 +10,10 @@
   };
 
   programs.firefox.enable = true;
+
+  # 啟用 GNOME Remote Desktop
+  services.gnome.gnome-remote-desktop.enable = true;
+
+  # 開防火牆：RDP 3389、VNC 5900（依你要用哪種打開）
+  networking.firewall.allowedTCPPorts = [ 3389 5900 ];
 }
