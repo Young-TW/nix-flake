@@ -49,6 +49,11 @@ in
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  # 停掉 NixOS manual 與 options 產生
+  documentation.nixos.enable = false;
+  #（若還是會觸發，同時關整體文件）
+  documentation.enable = false;
+
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
