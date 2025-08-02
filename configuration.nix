@@ -12,7 +12,7 @@ let
   hmTarball = builtins.fetchTarball {
     url = "https://github.com/nix-community/home-manager/archive/refs/heads/release-25.05.tar.gz";
     # 請改成正確的 SRI 值（例如 "sha256-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx="）
-    sha256 = "sha256-026rvynmzmpigax9f8gy9z67lsl6dhzv2p6s8wz4w06v3gjvspm1";
+    sha256 = "sha256-oV695RvbAE4+R9pcsT9shmp6zE/+IZe6evHWX63f2Qg=";
   };
 in
 {
