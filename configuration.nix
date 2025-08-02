@@ -5,10 +5,33 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    ./hardware-configuration.nix
+
+    # 加入 home-manager NixOS module
+    (builtins.fetchTarball {
+      url = "https://github.com/nix-community/home-manager/archive/release-25.05.tar.gz";
+      sha256 = "0000000000000000000000000000000000000000000000000000";
+    }) + "/nixos"
+  ];
+
+  home-manager = {
+    useGlobalPkgs = true;
+    useUserPackages = true;
+
+    users.young = {
+      home.stateVersion = "25.05";
+
+      programs.git = {
+        enable = true;
+        userName = "young";
+        userEmail = "me@youn.gg";
+      };
+
+      programs.fish.enable = true;
+    };
+  };
+
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
