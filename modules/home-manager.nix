@@ -17,7 +17,7 @@
 
       # 建議把原本 users.users.young.packages 的 GUI 放到這裡
       home.packages = with pkgs; [
-        bitwarden brave discord element-desktop
+        amberol bitwarden brave discord element-desktop
         kitty mindustry obs-studio osu-lazer
         steam telegram-desktop vscode
       ];
