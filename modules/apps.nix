@@ -2,7 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     # system tools
-    curl wget htop tmux fish vim neovim bat eza ranger fastfetch onefetch btop
+    curl wget htop tmux fish vim neovim bat eza ranger fastfetch onefetch btop tree
 
     # development tools
     rustc cargo git github-cli cmake clang cxxopts fmt
