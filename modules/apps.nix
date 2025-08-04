@@ -1,9 +1,19 @@
 { config, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    cava docker vim wget fish fastfetch btop tmux curl htop bat
-    rustc cargo git github-cli cmake clang yt-dlp
-    neovim ranger onefetch cxxopts fmt ibus jetbrains-mono eza
-    podman podman-compose
+    # system tools
+    curl wget htop tmux fish vim neovim bat eza ranger fastfetch onefetch btop
+
+    # development tools
+    rustc cargo git github-cli cmake clang cxxopts fmt
+
+    # Fonts and input methods
+    ibus jetbrains-mono
+
+    # multimedia tools
+    yt-dlp cava
+
+    # container tools
+    docker podman podman-compose uv
   ];
 }
