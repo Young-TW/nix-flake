@@ -6,6 +6,7 @@
 
     users.young = {
       home.stateVersion = "25.05";
+      imports = [ ../home/young/home.nix ];
 
       programs.git = {
         enable = true;
