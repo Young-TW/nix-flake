@@ -19,7 +19,7 @@
       home.packages = with pkgs; [
         amberol bitwarden brave discord element-desktop
         kitty mindustry obs-studio osu-lazer
-        steam telegram-desktop vscode
+        telegram-desktop vscode
       ];
     };
   };
