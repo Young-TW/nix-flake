@@ -19,7 +19,7 @@
       home.packages = with pkgs; [
         alacritty amberol bitwarden brave discord ghostty dolphin-emu
         element-desktop kitty mindustry obs-studio osu-lazer
-        telegram-desktop vscode
+        prismlauncher telegram-desktop vscode
       ];
     };
   };
