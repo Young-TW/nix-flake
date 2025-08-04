@@ -1,4 +1,5 @@
 { config, pkgs, ... }:
+
 {
   environment.systemPackages = with pkgs; [
     # system tools
@@ -6,6 +7,13 @@
 
     # development tools
     rustc cargo git github-cli cmake clang cxxopts fmt
+
+    # nix tools
+    nix-search nix-index nix-update
+    nixpkgs-fmt deadnix statix
+    nix-prefetch nix-du nix-tree
+    nvd
+    nix-output-monitor
 
     # Fonts and input methods
     ibus jetbrains-mono
