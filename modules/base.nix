@@ -22,6 +22,11 @@
     LC_TIME = "zh_TW.UTF-8";
   };
 
+  i18n.inputMethod = {
+    enabled = "fcitx5";
+    fcitx5.addons = with pkgs; [ fcitx5-chewing ];
+  };
+
   services.openssh.enable = true;
   services.printing.enable = true;
 

@@ -16,7 +16,7 @@
     nix-output-monitor
 
     # Fonts and input methods
-    ibus jetbrains-mono
+    fcitx5 fcitx5-configtool fcitx5-chewing jetbrains-mono
 
     # multimedia tools
     yt-dlp cava
