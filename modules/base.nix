@@ -26,20 +26,21 @@
     enable = true;
     type = "fcitx5";
     fcitx5.addons = with pkgs; [ fcitx5-chewing ];
-    fcitx5.profile = ''
-      [Profile]
-      ConfigVersion=1
-
-      [Groups/0]
-      Name=Default
-      Default Layout=us
-      DefaultIM=chewing
-
-      [Groups/0/Items/0]
-      Name=chewing
-      Layout=us
-    '';
   };
+
+  environment.etc."xdg/fcitx5/profile".text = ''
+    [Profile]
+    ConfigVersion=1
+
+    [Groups/0]
+    Name=Default
+    Default Layout=us
+    DefaultIM=chewing
+
+    [Groups/0/Items/0]
+    Name=chewing
+    Layout=us
+  '';
 
   services.openssh.enable = true;
   services.printing.enable = true;
