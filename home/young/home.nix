@@ -1,7 +1,5 @@
 { config, pkgs, ... }:
 {
-  programs.dconf.enable = true;
-
   dconf.settings = {
     "org/gnome/desktop/remote-desktop" = {
       # 二擇一或都開

@@ -4,7 +4,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  networking.hostName = "nixos";
+  networking.hostName = "n7-z790";
   networking.networkmanager.enable = true;
 
   time.timeZone = "Asia/Taipei";
