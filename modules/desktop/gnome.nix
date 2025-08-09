@@ -14,6 +14,9 @@
   # 啟用 GNOME Remote Desktop
   services.gnome.gnome-remote-desktop.enable = true;
 
+  services.gnome.gnome-shell.extensionPackages =
+    with pkgs.gnomeExtensions; [ kimpanel ];
+
   # 開防火牆：RDP 3389、VNC 5900（依你要用哪種打開）
   networking.firewall.allowedTCPPorts = [ 3389 5900 ];
 }
