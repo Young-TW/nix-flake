@@ -16,7 +16,7 @@
     nix-output-monitor
 
     # Fonts and input methods
-    fcitx5 fcitx5-configtool fcitx5-chewing fcitx5-gtk fcitx5-qt jetbrains-mono
+    fcitx5 fcitx5-configtool fcitx5-chewing fcitx5-gtk libsForQt5.fcitx5-qt jetbrains-mono
 
     # multimedia tools
     yt-dlp cava
